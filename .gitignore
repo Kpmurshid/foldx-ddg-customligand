@@ -1,0 +1,21 @@
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# FoldX output folders
+AnalyseComplex_Results/
+Build_model/
+
+# Plot images and result files
+*.png
+*.csv
+*.fxout
+
+# FoldX temporary or intermediate PDBs
+*.pdb
+
+# System files
+.DS_Store
+Thumbs.db
+AnalyseComplex_Results/
+Build_model/
+.ipynb_checkpoints/
