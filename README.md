@@ -196,6 +196,7 @@ MIT License
 
 ## 🤝 Acknowledgements
 
+- This ongoing project is being supported by Telscie Genetics Pvt Ltd
 - [FoldX Suite](https://foldxsuite.crg.eu/)
 - [PyFoldX by Leandro Radusky](https://github.com/leandroradusky/pyfoldx)
 
