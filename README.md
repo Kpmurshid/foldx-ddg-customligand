@@ -128,6 +128,11 @@ List your mutations in `individual_list.txt` (WT residue, chain, residue number,
 ```bash
 FoldX --command=BuildModel --pdb=complex_repaired.pdb --mutant-file=individual_list.txt --numberOfRuns=3
 ```
+or 
+
+```bash
+bash run_build_model.sh
+```
 
 Mutant structures will be stored in the `BuildModel/` folder.
 
