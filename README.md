@@ -116,7 +116,7 @@ Use `paramX_AtomNames.ipynb` to:
 Place your protein-ligand structure in `complex.pdb` and run:
 
 ```bash
-FoldX --command=RepairPDB --pdb=complex.pdb
+foldx --command=RepairPDB --pdb=complex.pdb
 ```
 
 This generates `complex_repaired.pdb`.
@@ -126,7 +126,7 @@ This generates `complex_repaired.pdb`.
 List your mutations in `individual_list.txt` (WT residue, chain, residue number, mutant residue;) and run:
 
 ```bash
-FoldX --command=BuildModel --pdb=complex_repaired.pdb --mutant-file=individual_list.txt --numberOfRuns=3
+foldx --command=BuildModel --pdb=complex_repaired.pdb --mutant-file=individual_list.txt --numberOfRuns=3
 ```
 or 
 
@@ -152,7 +152,7 @@ This will iterate through all repaired mutant PDBs (`complex_repaired_*.pdb`) an
 #!/bin/bash
 mkdir -p AnalyseComplex_Results
 for pdb in complex_repaired_*.pdb; do
-    FoldX --command=AnalyseComplex --pdb=$pdb --analyseComplexChains=A,L
+    foldx --command=AnalyseComplex --pdb=$pdb --analyseComplexChains=A,L
     mv Interaction_Complex_* AnalyseComplex_Results/
     mv *.fxout AnalyseComplex_Results/
 done
